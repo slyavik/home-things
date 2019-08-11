@@ -1,0 +1,106 @@
+body {
+    background-color: #fffabf;
+}
+#page {
+    width: 660px;
+    margin: 0 auto; /* Задає сторінці значення по середині*/
+}
+
+/* Шапка ------------------------------------------------------------------- */
+#header {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 28px;
+    text-shadow: 1px 2px 4px black, 0 0 1em red;
+}
+.hr1 {
+    margin: 20px 0;
+    padding: 0;
+    height: 10px;
+    border: none;
+    border-top: 1px solid #333;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+/* Кнопочки горизонтального меню */
+ul.menu {
+    list-style-type: none;       /*Відключаємо спереду значки*/
+    background-color: #FF8888;
+    padding: 0px;
+    margin: 0px;        /*Відступи по краях*/
+    overflow: hidden;
+}
+ul.menu li{
+    float: left;
+}
+ul.menu li a{
+     /*   color: #030666;*/
+    display: inline-block;
+        padding: 10px; /* Рамка кругом зсилок*/
+        text-decoration: none;
+    }
+ul.menu li a:hover {    /*!!!!!!!!!!! -- неможна давати пробєли між  a : hover  -- не працюватиме*/
+    background-color: brown;
+}
+ul.menu li a:focus {
+    background-color: #ABCDEF;
+}
+#clear {
+    clear: both; /* Проміжок вирівнювання */
+}
+.hr2{
+    border: 0px;
+    height: 4px;
+    background: #000;
+    background-image: -webkit-linear-gradient(left, #fffabf, #000, #fffabf);
+    background-image: -moz-linear-gradient(left, #fffabf, #000, #fffabf);
+    background-image: -ms-linear-gradient(left, #fffabf, #000, #fffabf);
+    background-image: -o-linear-gradient(left, #fffabf, #000, #fffabf);
+}
+#content{               /* Мусить буди перед right бо відносно нього позиціонується*/
+    position: relative;
+    width: 660px;
+    margin: 0 auto;
+}
+/*права колонка ---------------------------------------------------------------------------*/
+#right {
+   /* position: absolute;*/
+        float: right;
+    width: 180px;
+    right: 0px;
+    top: 0px;
+}
+
+.hr01 {
+    height: 30px;
+    border-style: solid;
+    border-color: darkblue;
+    border-width: 2px 0 0 0;
+    border-radius: 20px;
+}
+.hr02{
+    height: 30px;
+    border-color: darkblue;
+    border-width: 0 0 2px 0;
+    border-radius: 20px;
+}
+/* Головна колонка*/
+#container {
+    position: static;
+    width: 100%;
+    padding-top: 10px;
+    padding-right:10px;
+}
+#footer {
+    background-color: #7945ff;
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    clear: both; /* забороняємо обтікання з двох сторін, блок виводеться з нової стрічки*/
+    width: 660px;
+    margin: 0 auto;
+}
+img[border] {
+    color: #FF8888;
+}
+
