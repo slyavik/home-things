@@ -1,0 +1,209 @@
+<Html>
+<head>
+    <meta charset="UTF-8">
+    <title>Домшні речі</title>
+   <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+        body {
+            background-color: #fffabf;
+        }
+        #page {
+            width: 660px;
+            margin: 0 auto; /* Задає сторінці значення по середині*/
+        }
+
+        /* Шапка ------------------------------------------------------------------- */
+        #header {
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            font-size: 28px;
+            text-shadow: 1px 2px 4px black, 0 0 1em red;
+        }
+        .hr1 {
+            margin: 20px 0;
+            padding: 0;
+            height: 10px;
+            border: none;
+            border-top: 1px solid #333;
+            box-shadow: 0 10px 10px -10px #8c8b8b inset;
+        }
+        /* Кнопочки горизонтального меню */
+        ul.menu {
+            list-style-type: none;       /*Відключаємо спереду значки*/
+            background-color: #FF8888;
+            padding: 0px;
+            margin: 0px;        /*Відступи по краях*/
+            overflow: hidden;
+        }
+        ul.menu li{
+            float: left;
+        }
+        ul.menu li a{
+            /*   color: #030666;*/
+            display: inline-block;
+            padding: 10px; /* Рамка кругом зсилок*/
+            text-decoration: none;
+        }
+        ul.menu li a:hover {    /*!!!!!!!!!!! -- неможна давати пробєли між  a : hover  -- не працюватиме*/
+            background-color: brown;
+        }
+        ul.menu li a:focus {
+            background-color: #ABCDEF;
+        }
+        #clear {
+            clear: both; /* Проміжок вирівнювання */
+        }
+        .hr2{
+            border: 0px;
+            height: 4px;
+            background: #000;
+            background-image: -webkit-linear-gradient(left, #fffabf, #000, #fffabf);
+            background-image: -moz-linear-gradient(left, #fffabf, #000, #fffabf);
+            background-image: -ms-linear-gradient(left, #fffabf, #000, #fffabf);
+            background-image: -o-linear-gradient(left, #fffabf, #000, #fffabf);
+        }
+        #content{               /* Мусить буди перед right бо відносно нього позиціонується*/
+            position: relative;
+            width: 660px;
+            margin: 0 auto;
+        }
+        /*права колонка ---------------------------------------------------------------------------*/
+        #right {
+            /* position: absolute;*/
+            float: right;
+            width: 180px;
+            right: 0px;
+            top: 0px;
+        }
+
+        .hr01 {
+            height: 30px;
+            border-style: solid;
+            border-color: darkblue;
+            border-width: 2px 0 0 0;
+            border-radius: 20px;
+        }
+        .hr02{
+            height: 30px;
+            border-color: darkblue;
+            border-width: 0 0 2px 0;
+            border-radius: 20px;
+        }
+        /* Головна колонка*/
+        #container {
+            position: static;
+            width: 100%;
+            padding-top: 10px;
+            padding-right:10px;
+        }
+        #footer {
+            background-color: #7945ff;
+            color: white;
+            height: 60px;
+            line-height: 60px;
+            clear: both; /* забороняємо обтікання з двох сторін, блок виводеться з нової стрічки*/
+            width: 660px;
+            margin: 0 auto;
+        }
+        img[border] {
+            color: #FF8888;
+        }
+
+    </style>
+</head>
+<body>
+<div id="page"><hr class="hr1">
+    <div id="header"> Універсальний проект "Мої домашні речі" </div>
+    <div>
+        <ul class="menu">
+            <li><a href="index.php">Головна</a> </li>
+            <li><a href="edit.php">Редагування</a> </li>
+            <li><a href="#">Планування</a> </li>
+            <li><a href="#">Викинуті товари</a> </li>
+            <li><a href="log.php">Адмін</a> </li>
+        </ul>
+    </div>
+    <div id="clear"><hr class="hr2"></div>
+</div>
+<div id="content">
+    <div id="right">
+        <hr class="hr01">
+        <table border="0">
+            <tr>
+                <td colspan="2" align="center">
+                    <form> Показати по замовчуванню
+                        <input type="checkbox" checked>
+                    </form>
+                </td>
+            </tr>
+            <form>
+                <tr>
+                    <td align="center" width="50"><input type="checkbox"></td>
+                    <td>Фотка</td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="checkbox"></td>
+                    <td>Ціна </td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="checkbox"></td>
+                    <td>Опис</td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="checkbox"></td>
+                    <td>Гарантія</td>
+                </tr>
+            </form>
+        </table>
+        <hr class="hr02"><hr class="hr2"><hr class="hr01">
+        <table border="0">
+            <tr>
+                <td colspan="2" align="center">Сортувати по групах</td>
+            </tr>
+            <form>
+                <tr>
+                    <td width="50"></td>
+                    <td>Всі <input type="radio"></td>
+                </tr>
+                <tr>
+                    <td><input type="radio"></td>
+                    <td>Туризм</td>
+                </tr>
+                <tr>
+                    <td><input type="radio"></td>
+                    <td>Інструменти</td>
+                </tr>
+                <tr>
+                    <td><input type="radio"></td>
+                    <td>Дім/Сад/Город</td>
+                </tr>
+                <tr>
+                    <td><input type="radio"></td>
+                    <td>Одяг/Взуття</td>
+                </tr>
+                <tr>
+                    <td><input type="radio"></td>
+                    <td>Чоловіка</td>
+                </tr>
+                <tr>
+                    <td><input type="radio"></td>
+                    <td>Дружини</td>
+                </tr>
+            </form>
+        </table>
+        <hr class="hr02">
+    </div>
+    <div id="container">
+        <hr class= "hr01">
+        <table><tr><td>
+            <img src="images/noimages.png" width="150" align="left" hspace="10">
+            <h3 align="center"> Назва // Ціна // Номер </h3>
+            <p> Різна інформція про товар<br>
+                vdsdsf varbtsbs bsthsg jyjd htydh yjds tj djy jsjtysh tjtykyt dhts ht shtyj yj ysh dshfрп </p>
+        </td></tr></table>
+        <hr class="hr02">
+    </div></div>
+<div id="footer"><h2 align="center">Наші речі</h2></div>
+</body>
+</Html>
