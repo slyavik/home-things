@@ -1,0 +1,13 @@
+body {
+    background-color: #adb5bd;
+    background-image: url("../img/bg11.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.navbar-my {
+    margin-top: 100px;
+}
