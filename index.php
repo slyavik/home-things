@@ -13,7 +13,7 @@
 <script>
     $(document).ready(function () {
         $("#logo")
-            .animate({top: '30px', left:'30%', opacity: '0.5', fontSize:'2em'},2000)
+            .animate({top: '10px', left:'30%', opacity: '0.5', fontSize:'3em'},2000)
             .animate({opacity: '1'});
     })
 </script>
@@ -56,7 +56,7 @@
                 <div class="card mb-3 overlay" style="max-width: 540px;"> <!--Card-->
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="..." class="card-img" alt="...">
+                            <img src="https://via.placeholder.com/500" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -69,15 +69,15 @@
                 </div>
             </div>
             <div class="col-xl-6 container-my2">
-                <div class="card mb-3 overlay" style="max-width: 540px;">
+                <div class="card mb-3 overlay" style="max-width: 540px;"> <!--Card-->
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="..." class="card-img" alt="...">
+                            <img src="https://via.placeholder.com/500" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Card title222</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">This is a widercontent. This content is a little bit longer.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
