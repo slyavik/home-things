@@ -2,6 +2,7 @@
 <Html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- For correct work on different device-->
     <title>Homemade Things</title>
     <script src="style/jquery.min.js"></script>
     <link rel="stylesheet" href="style/bootstrap.min.css">
@@ -48,12 +49,14 @@
         </ul>
         </div>
 </nav>
+
 <div class="container container-my">
 <div class="row"> <!--main container-->
     <div class="col-lg-8 col-xl-9 container-my">
         <div class="row"> <!-- things container-->
             <div class="col-xl-6 container-my2">
-                <div class="card mb-3 overlay" style="max-width: 540px;"> <!--Card-->
+                <!--Card-->
+                <div class="card mb-3 overlay" style="max-width: 640px;">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="https://via.placeholder.com/500" class="card-img" alt="...">
@@ -69,7 +72,7 @@
                 </div>
             </div>
             <div class="col-xl-6 container-my2">
-                <div class="card mb-3 overlay" style="max-width: 540px;"> <!--Card-->
+                <div class="card mb-3 overlay" style="max-width: 640px;"> <!--Card-->
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src="https://via.placeholder.com/500" class="card-img" alt="...">
@@ -85,10 +88,7 @@
                 </div>
             </div>
 
-
-
         </div>
-
         <p>left</p>
     </div>
     <div class="order-first order-lg-0 col-lg-4 col-xl-3 container-my">
@@ -107,25 +107,17 @@
 </div>
 
 
-<header class="header">
-<br><br><br><br><br><br><br><br><br><br>
-    jjjdjdjdjdjdjdjd
-</header>
-<header class="header">
-    <br><br><br><br><br><br><br><br><br><br>
-    jjjdjdjdjdjdjdjd
-</header>
-<header class="header">
-    <br><br><br><br><br><br><br><br><br><br>
-    jjjdjdjdjdjdjdjd
-</header>
-<header class="header">
-    <br><br><br><br><br><br><br><br><br><br>
-    jjjdjdjdjdjdjdjd
-</header>
-<header class="header">
-    <br><br><br><br><br><br><br><br><br><br>
-    jjjdjdjdjdjdjdjd
-</header>
+<div class="row align-items-end">
+    <div class="col-md-4 footer1">
+        © 2019 Yaroslav
+    </div>
+    <div class="col-md-4 footer1">
+        ***
+    </div>
+    <div class="col-md-4 footer1">
+        Home - things
+    </div>
+</div>
+
 </body>
 </Html>

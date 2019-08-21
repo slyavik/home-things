@@ -30,8 +30,19 @@ body {
     color: chartreuse;
     font-size: 20px;
     background: #0b2e13;
-}
- */
+} */
+
 .overlay {
     background: rgba(244,244,244,0.79);
+}
+
+.footer1 {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40 ;
+    color: #b3b7bb;
+    height: 50px;
+    font-size: 18px;
+
+
 }
