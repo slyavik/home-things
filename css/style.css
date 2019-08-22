@@ -18,19 +18,23 @@ body {
     margin-top: 100px;
 }
 
-/* .container-my {
+.MainContainer {
+    margin-top: 10px;
+}
+
+ .ToView {
     border: 2px solid red;
-    color: chartreuse;
+    color: blue;
     font-size: 20px;
     background: #4e555b;
 }
 
-.container-my2 {
-    border: 2px solid red;
-    color: chartreuse;
+.ToView2 {
+    border: 2px solid yellow;
+    color: #930d67;
     font-size: 20px;
     background: #0b2e13;
-} */
+}
 
 .overlay {
     background: rgba(244,244,244,0.79);

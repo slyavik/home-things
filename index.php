@@ -50,60 +50,60 @@
         </div>
 </nav>
 
-<div class="container container-my">
-<div class="row"> <!--main container-->
-    <div class="col-lg-8 col-xl-9 container-my">
-        <div class="row"> <!-- things container-->
-            <div class="col-xl-6 container-my2">
-                <!--Card-->
-                <div class="card mb-3 overlay" style="max-width: 640px;">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="https://via.placeholder.com/500" class="card-img" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 111</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+<div class="container MainContainer"> <!--main container-->
+    <div class="row"> <!--container left right-->
+        <div class="col-lg-8 col-xl-9">
+            <div class="row"> <!-- things container-->
+                <div class="col-xl-6">
+                    <!--Card-->
+                    <div class="card mb-3 overlay" style="max-width: 640px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://via.placeholder.com/500" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title 111</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-6 container-my2">
-                <div class="card mb-3 overlay" style="max-width: 640px;"> <!--Card-->
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="https://via.placeholder.com/500" class="card-img" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title222</h5>
-                                <p class="card-text">This is a widercontent. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="col-xl-6">
+                    <div class="card mb-3 overlay" style="max-width: 640px;"> <!--Card-->
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://via.placeholder.com/500" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title222</h5>
+                                    <p class="card-text">This is a widercontent. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-
+            <p>left</p>
         </div>
-        <p>left</p>
-    </div>
-    <div class="order-first order-lg-0 col-lg-4 col-xl-3 container-my">
-        <div class="container">
-            <div class="row">
+        <div class="order-first order-lg-0 col-lg-4 col-xl-3"> <!--right container-->
+            <div class="container ToView">
+                <div class="row">
 
-                <div class="col align-self-center">
-                    One of three columns Right
+                    <div class="col align-self-center">
+                        One of three columns Right
+                    </div>
+
                 </div>
-
             </div>
         </div>
     </div>
-</div>
-    <p> Contener </p>
+        <p> Contener </p>
 </div>
 
 
