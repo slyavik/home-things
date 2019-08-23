@@ -87,27 +87,64 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+            <!--end things container-->
             <p>left</p>
         </div>
-        <div class="order-first order-lg-0 col-lg-4 col-xl-3"> <!--right container-->
-            <div class="container ToView">
-                <div class="row">
-
-                    <div class="col align-self-center">
-                        One of three columns Right
-                    </div>
-
+        <!--right container-->
+        <div class="order-first order-lg-0 col-lg-4 col-xl-3">
+            <div class="container rightBar">
+                <div class="rightBarButtonSlide">
+                    The appearance of the card
                 </div>
+                <div class="row">
+                    <div class="col d-none d-lg-block">
+                        <form name="AppearanceCard">
+                            <div class="form-check">
+                                <lebel class="form-check-label">
+                                    Show by default <input type="checkbox" checked="checked"></div>
+                                </lebel>
+
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="image" >  - Image
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="price"> - Price
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="description"> - Description
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="year of purchase"> - Year of purchase
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" name="guarantee"> - Guarantee
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--end the appearance of the card-->
             </div>
         </div>
+        <!--end right container-->
     </div>
         <p> Contener </p>
+    <div class="row align-irem-end">
+        <div class="col-md-6 footer1"></div>
+        <div class="col-md-6 footer1"></div>  
+    </div>
 </div>
 
-
-<div class="row align-items-end">
+                <!--footer 2-->
+<div class="row align-items-end footerContainer">
     <div class="col-md-4 footer1">
         © 2019 Yaroslav
     </div>
@@ -118,6 +155,7 @@
         Home - things
     </div>
 </div>
+
 
 </body>
 </Html>
