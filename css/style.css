@@ -18,10 +18,15 @@ body {
     margin-top: 100px;
 }
 
+.buttonSite{
+    margin-left: 150px;
+}
 .rightBar {
     border-radius: 4px ;
     background: rgba(244, 244, 244, 0.75);
     padding: unset;
+    margin-bottom: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 .rightBarButtonSlide {
     border: solid 1px;
@@ -31,7 +36,6 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
-
 
 .MainContainer {
     margin-top: 10px;
@@ -53,6 +57,7 @@ body {
 
 .overlay {
     background: rgba(244,244,244,0.79);
+    box-shadow: 10px 10px 5px;
 }
 
 .footerContainer {

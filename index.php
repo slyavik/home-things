@@ -102,36 +102,89 @@
                         <form name="AppearanceCard">
                             <div class="form-check">
                                 <lebel class="form-check-label">
-                                    Show by default <input type="checkbox" checked="checked"></div>
+                                    Show by default <input type="checkbox" checked="checked" class="form-check-inline"></div>
                                 </lebel>
 
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="checkbox" name="image" >  - Image
+                                    <input type="checkbox" name="image" class="form-check-inline">  - Image
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="checkbox" name="price"> - Price
+                                    <input type="checkbox" name="price" class="form-check-inline"> - Price
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="checkbox" name="description"> - Description
+                                    <input type="checkbox" name="description" class="form-check-inline"> - Description
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" name="year of purchase"> - Year of purchase
+                                <input type="checkbox" name="year of purchase" class="form-check-inline"> - Year of purchase
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="checkbox" name="guarantee"> - Guarantee
+                                    <input type="checkbox" name="guarantee" class="form-check-inline"> - Guarantee
                                 </label>
                             </div>
+                            <button type="submit" class="btn btn-dark buttonSite">Submit</button>
                         </form>
                     </div>
                 </div>
                 <!--end the appearance of the card-->
+            </div>
+            <div class="container rightBar">
+                <!--Sorting by groups-->
+                <div class="rightBarButtonSlide"> Sorting by groups</div>
+                <div class="row">
+                    <div class="col d-none d-lg-block">
+                        <form name="">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    All groups: <input type="radio" name="groups" class="form-check-inline" checked="checked">
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="groups" class="form-check-inline"> Tourism
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="groups" class="form-check-inline"> Tools
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="groups" class="form-check-inline"> House, garden
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="groups" class="form-check-inline"> Clothes, shoes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="groups" class="form-check-inline"> Fot the husband
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="groups" class="form-check-inline"> For a women
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="groups" class="form-check-inline"> For a both
+                                </label>
+                            </div>
+                            <button type="submit" name="" class="btn btn-dark buttonSite">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <!--end Sorting by groups-->
             </div>
         </div>
         <!--end right container-->
