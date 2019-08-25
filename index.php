@@ -189,22 +189,58 @@
         </div>
         <!--end right container-->
     </div>
-        <p> Contener </p>
+    <!--footer small-->
     <div class="row align-irem-end">
-        <div class="col-md-6 footer1"></div>
-        <div class="col-md-6 footer1"></div>  
+        <div class="col-lg-6 col-xl-4">
+            <div class="footer-small1">
+                <p align="center"><ins>Result:</ins></p>
+                <div class="row">
+                    <div class="col">
+                        <ul>
+                            <li>
+                                All things -
+                            </li>
+                            <li>
+                                For tourism -
+                            </li>
+                            <li>
+                                Tools -
+                            </li>
+                            <li>
+                                House, garden -
+                            </li>
+                            <li>
+                                For the husband -
+                            </li>
+                            <li>
+                                For a women -
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p>0<br>0<br>0<br>0<br>0<br>0<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-8">
+            <div class="footer-small2">
+                <h5 align="center">Messages and announcements</h5>
+            </div>
+        </div>
     </div>
+    <!--end footer small-->
 </div>
 
-                <!--footer 2-->
+                <!--footer-->
 <div class="row align-items-end footerContainer">
-    <div class="col-md-4 footer1">
+    <div class="col-md-4 footer">
         © 2019 Yaroslav
     </div>
-    <div class="col-md-4 footer1">
+    <div class="col-md-4 footer">
         ***
     </div>
-    <div class="col-md-4 footer1">
+    <div class="col-md-4 footer">
         Home - things
     </div>
 </div>

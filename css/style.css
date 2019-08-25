@@ -63,13 +63,26 @@ body {
 .footerContainer {
     margin-top: 10px;
 }
-.footer1 {
+.footer {
     text-align: center;
     padding: 10px;
     background-color: #343a40 ;
     color: #b3b7bb;
     height: 50px;
     font-size: 18px;
-
+}
+.footer-small1 {
+    padding: 10px;
+    background: #343a40;
+    border-radius: 4px;
+    color: #b3b7bb;
+}
+.footer-small2 {
+    position: absolute;
+    background: #343a40;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
 
 }
