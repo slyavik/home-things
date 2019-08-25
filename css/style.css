@@ -25,13 +25,16 @@ body {
     border: 2px solid #FF8888;
     box-shadow: 2px 2px 5px #000000;
 }
+.buttonSite:active{
+    transform: translate3d(2px,2px,5px);
+}
 
 .rightBar {
     border-radius: 4px ;
     background: rgba(244, 244, 244, 0.75);
     padding: unset;
     margin-bottom: 10px;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .rightBarButtonSlide {
     border: solid 1px;
@@ -45,6 +48,13 @@ body {
     border: 2px solid #FF8888;
     box-shadow: 2px 2px 5px;
     text-decoration-line: underline;
+}
+.rightBarButtonSlide:active{
+    transform: translate3d(2px,2px,5px);
+    background: rgba(230, 76, 182, 0.2);
+}
+.my-none {
+    display: none;
 }
 
 .MainContainer {
@@ -72,6 +82,10 @@ body {
 .overlay:hover{
     border: 2px solid #FF8888;
     background: rgba(244, 244, 244, 0.9);
+}
+.overlay:active{
+    transform: translate3d(4px,4px,5px);
+    background: rgba(255, 136, 136, 0.8);
 }
 
 .footerContainer {

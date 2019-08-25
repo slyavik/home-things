@@ -94,11 +94,18 @@
         <!--right container-->
         <div class="order-first order-lg-0 col-lg-4 col-xl-3">
             <div class="container rightBar">
-                <div class="rightBarButtonSlide">
+                <script>
+                    $(document).ready(function () {
+                        $("#slid1").click(function () {
+                            $("#slider1").slideToggle(2000);
+                        })
+                    })
+                </script>
+                <div id="slid1" class="rightBarButtonSlide">
                     The appearance of the card
                 </div>
                 <div class="row">
-                    <div class="col d-none d-lg-block">
+                    <div id="slider1" class="col my-none d-lg-block">
                         <form name="AppearanceCard">
                             <div class="form-check">
                                 <lebel class="form-check-label">
@@ -136,9 +143,16 @@
             </div>
             <div class="container rightBar">
                 <!--Sorting by groups-->
-                <div class="rightBarButtonSlide"> Sorting by groups</div>
+                <script>
+                    $(document).ready(function () {
+                        $("#slid2").click(function () {
+                            $("#slider2").slideToggle(2000);
+                        })
+                    })
+                </script>
+                <div id="slid2" class="rightBarButtonSlide"> Sorting by groups</div>
                 <div class="row">
-                    <div class="col d-none d-lg-block">
+                    <div id="slider2" class="col my-none d-lg-block">
                         <form name="">
                             <div class="form-check">
                                 <label class="form-check-label">
@@ -195,7 +209,7 @@
             <div class="footer-small1">
                 <p align="center"><ins>Result:</ins></p>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-7">
                         <ul>
                             <li>
                                 All things -
