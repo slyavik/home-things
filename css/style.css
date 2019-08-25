@@ -21,6 +21,11 @@ body {
 .buttonSite{
     margin-left: 150px;
 }
+.buttonSite:hover {
+    border: 2px solid #FF8888;
+    box-shadow: 2px 2px 5px #000000;
+}
+
 .rightBar {
     border-radius: 4px ;
     background: rgba(244, 244, 244, 0.75);
@@ -35,6 +40,11 @@ body {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
+}
+.rightBarButtonSlide:hover {
+    border: 2px solid #FF8888;
+    box-shadow: 2px 2px 5px;
+    text-decoration-line: underline;
 }
 
 .MainContainer {
@@ -58,6 +68,10 @@ body {
 .overlay {
     background: rgba(244,244,244,0.79);
     box-shadow: 10px 10px 5px;
+}
+.overlay:hover{
+    border: 2px solid #FF8888;
+    background: rgba(244, 244, 244, 0.9);
 }
 
 .footerContainer {
