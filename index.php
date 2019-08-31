@@ -74,8 +74,9 @@
                                     <h5 class="card-title"><?= $row['name'] ?> </h5>
                                     <div class="card-text text-right"><?=$row['price']?> грн.</div>
                                     <p class="card-text"><?=$row['description']?></p>
-                                    <p class="card-text"><small class="text-capitalize">Дата поупки: <?=$row['dataofpurchase'] ?>
-                                    <br> На гарантії до: <?=$row['dataofpurchase'] ?></small></p>
+                                    <p class="card-text"><small class="text-capitalize">
+                                            Data of purchase: <?=$row['dataofpurchase'] ?>
+                                    <br> Warranty period up to: <?= date('d-M-Y', strtotime(date($row['dataofpurchase']).'+'.$row['guarantee'].'year'))  ?> </small></p>
                                 </div>
                             </div>
                         </div>
