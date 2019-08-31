@@ -10,6 +10,9 @@
     <script src="style/bootstrap.min.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
+<?php
+    include 'function.php';
+?>
 <body>
 <script>
     $(document).ready(function () {
@@ -54,39 +57,31 @@
     <div class="row"> <!--container left right-->
         <div class="col-lg-8 col-xl-9">
             <div class="row"> <!-- things container-->
+                <!--Card-->
+                <?php
+                while ($row=mysqli_fetch_assoc($res))
+                {
+                ?>
                 <div class="col-xl-6">
-                    <!--Card-->
                     <div class="card mb-3 overlay" style="max-width: 640px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img src="https://via.placeholder.com/500" class="card-img" alt="...">
+                                <img src="images/<?= $row['image1'] ?>" class="card-img" alt="...">
                             </div>
                             <div class="col-md-8">
+
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title 111</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <h5 class="card-title"><?= $row['name'] ?> </h5>
+                                    <div class="card-text text-right"><?=$row['price']?> грн.</div>
+                                    <p class="card-text"><?=$row['description']?></p>
+                                    <p class="card-text"><small class="text-capitalize">Дата поупки: <?=$row['dataofpurchase'] ?>
+                                    <br> На гарантії до: <?=$row['dataofpurchase'] ?></small></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6">
-                    <div class="card mb-3 overlay" style="max-width: 640px;"> <!--Card-->
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="https://via.placeholder.com/500" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title222</h5>
-                                    <p class="card-text">This is a widercontent. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <? } ?>
             </div>
             <!--end things container-->
             <p>left</p>
