@@ -65,18 +65,30 @@
                 <div class="col-xl-6">
                     <div class="card mb-3 overlay" style="max-width: 640px;">
                         <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="images/<?= $row['image1'] ?>" class="card-img" alt="...">
-                            </div>
+                            <?php
+                            if (isset($row['image1']))
+                                {echo '<div class="col-md-4">
+                                <img src="images/'.$row['image1'].'" class="card-img" alt="...">
+                            </div>';}
+                            ?>
                             <div class="col-md-8">
-
                                 <div class="card-body">
                                     <h5 class="card-title"><?= $row['name'] ?> </h5>
-                                    <div class="card-text text-right"><?=$row['price']?> грн.</div>
+                                    <?php
+                                        if (isset($row['price']))
+                                            { echo '<div class="card-text text-right">' . $row['price'] . ' грн.</div>'; } ?>
                                     <p class="card-text"><?=$row['description']?></p>
-                                    <p class="card-text"><small class="text-capitalize">
-                                            Data of purchase: <?=$row['dataofpurchase'] ?>
-                                    <br> Warranty period up to: <?= date('d-M-Y', strtotime(date($row['dataofpurchase']).'+'.$row['guarantee'].'year'))  ?> </small></p>
+                                    <p class="card-text"><small class="text-justify">
+                                            <?php
+                                            if (isset($row['groups']))
+                                                { echo 'Groups the things: <u>'.$row['groups'].'</u>';}
+                                            if (isset($row['dataofpurchase']))
+                                                {echo '<br> Data of purchase: <u>'.$row['dataofpurchase'].'</u>';}
+                                            if (isset($row['guarantee']))
+                                                {echo '<br> Warranty period up to: <u>'.date('d-M-Y', strtotime(date($row['dataofpurchase']).'+'.$row['guarantee'].'year')).'</u>';}
+                                            ?>
+                                                    </small></p>
+
                                 </div>
                             </div>
                         </div>
@@ -102,33 +114,36 @@
                 </div>
                 <div class="row">
                     <div id="slider1" class="col my-none d-lg-block">
-                        <form name="AppearanceCard">
-                            <div class="form-check">
+                        <form action="index.php" method="post">
+                            <!-- <div class="form-check">
                                 <lebel class="form-check-label">
                                     Show by default <input type="checkbox" checked="checked" class="form-check-inline"></div>
                                 </lebel>
-
+-->
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="checkbox" name="image" class="form-check-inline">  - Image
+                                    <input type="checkbox" name="image" value="yes" class="form-check-inline">  - Image
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="checkbox" name="price" class="form-check-inline"> - Price
+                                    <input type="checkbox" name="price" value="yes" class="form-check-inline"> - Price
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="checkbox" name="description" class="form-check-inline"> - Description
+                                    <input type="checkbox" name="description" value="yes" class="form-check-inline"> - Description
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" name="year of purchase" class="form-check-inline"> - Year of purchase
+                                <input type="checkbox" name="groups" value="yes" class="form-check-inline"> - Grousp
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="yearofpurchase" value="yes" class="form-check-inline"> - Year of purchase
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="checkbox" name="guarantee" class="form-check-inline"> - Guarantee
+                                    <input type="checkbox" name="guarantee" value="yes" class="form-check-inline"> - Guarantee
                                 </label>
                             </div>
                             <button type="submit" class="btn btn-dark buttonSite">Submit</button>

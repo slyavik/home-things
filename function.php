@@ -1,12 +1,34 @@
 <?php
     include 'connect.php';
 
+if (!empty($_POST))     // if the value is not empty
+{
 
-    $desc = description;
+// The eppearance of the card
+    if (isset($_POST['image']) && $_POST['image'] == 'yes') { $image_eppearance = image1; }
+    else  $image_eppearance = 0;
+    if (isset($_POST['price']) && $_POST['price'] == 'yes') {$price_eppearance = price;}
+    else $price_eppearance = 0;
+    if (isset($_POST['description']) && $_POST['description'] == 'yes') {$description_eppearance = description; }
+    else $description_eppearance = 0;
+    if (isset($_POST['groups']) && $_POST['groups'] == 'yes') {$groups_eppearance = groups;}
+    else $groups_eppearance = 0;
+    if (isset($_POST['yearofpurchase']) && $_POST['yearofpurchase']) {$dataofpurchase_eppearance = dataofpurchase; }
+    else $dataofpurchase_eppearance = 0;
+    if (isset($_POST['guarantee']) && $_POST['guarantee'] == 'yes') {$guarantee_eppearance = guarantee;}
+    else $guarantee_eppearance = 0;
 
-    $sql = "SELECT ID, name, price, guarantee, groups, dataofpurchase, 
-            image1, image2, image3, image4, image5, $desc  FROM mythings";
+    $sql = "SELECT ID, name, $price_eppearance, $guarantee_eppearance, $groups_eppearance, $dataofpurchase_eppearance,
+$image_eppearance, $description_eppearance  FROM mythings";
     $res = mysqli_query($conn,$sql);
+
+}
+else
+{
+    $sql = "SELECT ID, name, image1, description  FROM mythings";
+    $res = mysqli_query($conn,$sql);
+}
+
 
 
     /*
