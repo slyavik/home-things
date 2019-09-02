@@ -1,9 +1,14 @@
-<?php
+    <?php
     include 'connect.php';
 
-if (!empty($_POST))     // if the value is not empty
-{
 
+$celector = $_POST['groups'];
+    if (empty($celector) or $celector == 'all') {$condition = NULL;}
+    else $condition = "WHERE groups = '$celector' ";
+
+
+if (!empty($_POST))     // if the value is not empty
+    {
 // The eppearance of the card
     if (isset($_POST['image']) && $_POST['image'] == 'yes') { $image_eppearance = image1; }
     else  $image_eppearance = 0;
@@ -18,14 +23,16 @@ if (!empty($_POST))     // if the value is not empty
     if (isset($_POST['guarantee']) && $_POST['guarantee'] == 'yes') {$guarantee_eppearance = guarantee;}
     else $guarantee_eppearance = 0;
 
+    if ($condition == !NULL) {$image_eppearance = image1;};
+
     $sql = "SELECT ID, name, $price_eppearance, $guarantee_eppearance, $groups_eppearance, $dataofpurchase_eppearance,
-$image_eppearance, $description_eppearance  FROM mythings";
+$image_eppearance, $description_eppearance  FROM mythings $condition";
     $res = mysqli_query($conn,$sql);
 
 }
 else
 {
-    $sql = "SELECT ID, name, image1, description  FROM mythings";
+    $sql = "SELECT ID, name, image1, description  FROM mythings $condition";
     $res = mysqli_query($conn,$sql);
 }
 

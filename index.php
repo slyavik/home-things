@@ -102,6 +102,7 @@
         <!--right container-->
         <div class="order-first order-lg-0 col-lg-4 col-xl-3">
             <div class="container rightBar">
+                <!--slider script-->
                 <script>
                     $(document).ready(function () {
                         $("#slid1").click(function () {
@@ -113,101 +114,101 @@
                     The appearance of the card
                 </div>
                 <div class="row">
-                    <div id="slider1" class="col my-none d-lg-block">
-                        <form action="index.php" method="post">
-                            <!-- <div class="form-check">
-                                <lebel class="form-check-label">
-                                    Show by default <input type="checkbox" checked="checked" class="form-check-inline"></div>
-                                </lebel>
--->
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="checkbox" name="image" value="yes" class="form-check-inline">  - Image
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="checkbox" name="price" value="yes" class="form-check-inline"> - Price
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="checkbox" name="description" value="yes" class="form-check-inline"> - Description
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" name="groups" value="yes" class="form-check-inline"> - Grousp
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" name="yearofpurchase" value="yes" class="form-check-inline"> - Year of purchase
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="checkbox" name="guarantee" value="yes" class="form-check-inline"> - Guarantee
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-dark buttonSite">Submit</button>
-                        </form>
+                    <form action="index.php" method="post">
+                        <div id="slider1" class="col my-none d-lg-block">
+
+                                <!-- <div class="form-check">
+                                    <lebel class="form-check-label">
+                                        Show by default <input type="checkbox" checked="checked" class="form-check-inline"></div>
+                                    </lebel>-->
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="image" value="yes" class="form-check-inline">  - Image
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="price" value="yes" class="form-check-inline"> - Price
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="description" value="yes" class="form-check-inline"> - Description
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" name="groups" value="yes" class="form-check-inline"> - Grousp
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" name="yearofpurchase" value="yes" class="form-check-inline"> - Year of purchase
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="guarantee" value="yes" class="form-check-inline"> - Guarantee
+                                    </label>
+                                </div>
+                                <input type="submit" value="condition" class="btn btn-dark buttonSite">
+                            <!-- </form> -->
+                        </div>
                     </div>
+                    <!--end the appearance of the card-->
                 </div>
-                <!--end the appearance of the card-->
-            </div>
-            <div class="container rightBar">
-                <!--Sorting by groups-->
-                <script>
-                    $(document).ready(function () {
-                        $("#slid2").click(function () {
-                            $("#slider2").slideToggle(2000);
+                <div class="container rightBar">
+                    <!--Sorting by groups-->
+                    <script>
+                        $(document).ready(function () {
+                            $("#slid2").click(function () {
+                                $("#slider2").slideToggle(2000);
+                            })
                         })
-                    })
-                </script>
-                <div id="slid2" class="rightBarButtonSlide"> Sorting by groups</div>
-                <div class="row">
-                    <div id="slider2" class="col my-none d-lg-block">
-                        <form name="">
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    All groups: <input type="radio" name="groups" class="form-check-inline" checked="checked">
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="radio" name="groups" class="form-check-inline"> Tourism
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="radio" name="groups" class="form-check-inline"> Tools
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="radio" name="groups" class="form-check-inline"> House, garden
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="radio" name="groups" class="form-check-inline"> Clothes, shoes
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="radio" name="groups" class="form-check-inline"> Fot the husband
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="radio" name="groups" class="form-check-inline"> For a women
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="radio" name="groups" class="form-check-inline"> For a both
-                                </label>
-                            </div>
-                            <button type="submit" name="" class="btn btn-dark buttonSite">Submit</button>
-                        </form>
-                    </div>
+                    </script>
+                    <div id="slid2" class="rightBarButtonSlide"> Sorting by groups</div>
+                    <div class="row">
+                        <div id="slider2" class="col my-none d-lg-block">
+                            <!-- <form id="groupsForm" action="index.php" method="post"> -->
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        All groups: <input type="radio" name="groups" value="all" class="form-check-inline" checked="checked">
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="groups" value="tourisn" class="form-check-inline"> Tourism
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="groups" value="tools" class="form-check-inline"> Tools
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="groups" value="garden" class="form-check-inline"> House, garden
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="groups" value="clothes" class="form-check-inline"> Clothes, shoes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="groups" value="men" class="form-check-inline"> Fot the husband
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="groups" value="women" class="form-check-inline"> For a women
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="groups" value="both" class="form-check-inline"> For a both
+                                    </label>
+                                </div>
+                                <input type="submit" value="condition" class="btn btn-dark buttonSite">
+                        </div>
+                    </form>
                 </div>
                 <!--end Sorting by groups-->
             </div>
